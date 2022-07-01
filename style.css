@@ -1,0 +1,61 @@
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  /* "Scrolling context */
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.parallax-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.parallax-background {
+  /* translateZ = how far it's from the screen relative
+  to previously set perspective value */
+  transform: translateZ(-10px) scale(2);
+}
+
+.parallax-foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.parallax-background,
+.parallax-foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.parallax-text {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 0 0 5px black;
+}
+
+.page-content {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.page-content p {
+  max-width: 500px;
+}
