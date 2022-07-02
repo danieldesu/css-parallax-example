@@ -27,11 +27,11 @@ body {
 .parallax-background {
   /* translateZ = how far it's from the screen relative
   to previously set perspective value */
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-10px) scale(2.1);
 }
 
 .parallax-foreground {
-  transform: translateZ(-5px) scale(1.5);
+  transform: translateZ(-5px) scale(1.6);
 }
 
 .parallax-background,
